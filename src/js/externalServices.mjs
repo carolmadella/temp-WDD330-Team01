@@ -11,6 +11,9 @@ function convertToJson(res) {
 export async function getProductsByCategory(category) {
 
   const response = await fetch(`${baseURL}products/search/${category}`);
+
+  console.log("RESPONSE:", response)
+
   const data = await convertToJson(response);
   return data.Result;
 }
