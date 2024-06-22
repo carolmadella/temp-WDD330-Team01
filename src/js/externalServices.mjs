@@ -1,4 +1,5 @@
-const baseURL = import.meta.env.VITE_SERVER_URL;
+const baseURL = '/api'; // This assumes that your proxy in vite.config.js is configured to forward /api requests
+
 
 function convertToJson(res) {
   if (res.ok) {
